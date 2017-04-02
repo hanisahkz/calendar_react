@@ -4,14 +4,5 @@
 
 <h3>Make a New Appointment</h3>
 
-<!-- the form area -->
-<%= form_for @appointment, remote: true do |f| %>
-  <%= f.text_field :title, placeholder: 'Appointment Title' %>
-  <%= f.text_field :appt_time, placeholder: 'Date and Time' %>
-  <%= f.submit "Create Appointment!" %>
-<% end %>
-
-<!-- list of appointment appears here -->
-<div id="appointments">
-  <%= render 'appointments' %>
-</div>
+<!-- use react helper. Pass prop (attribute) inside it -->
+<%= react_component('Appointments', appointments: @appointments ) %>
