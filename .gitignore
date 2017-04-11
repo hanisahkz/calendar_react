@@ -15,3 +15,12 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+
+
+.DS_Store
+app/.DS_Store
+app/assets/.DS_Store
+app/assets/javascripts/.DS_Store
+vendor/.DS_Store
+vendor/assets/.DS_Store
